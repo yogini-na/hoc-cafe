@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <rect width="100" height="100" rx="24" fill="#241710"/>
+  <circle cx="50" cy="50" r="44" stroke="#C5A16B" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <!-- Coffee Cup outline -->
+  <path d="M28 42h40c0 0-2 26-20 26S28 42 28 42z" fill="#35251D" stroke="#C5A16B" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M68 46h6a6 6 0 0 1 6 6v2a6 6 0 0 1-6 6h-7" stroke="#C5A16B" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Rising Steam -->
+  <path d="M42 34c0-4 4-5 4-8" stroke="#A66A3F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M50 34c0-5 4-6 4-10" stroke="#C5A16B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M58 34c0-4 4-5 4-8" stroke="#A66A3F" stroke-width="2" stroke-linecap="round"/>
+  <!-- Base saucer -->
+  <path d="M24 73h52" stroke="#C5A16B" stroke-width="3" stroke-linecap="round"/>
+</svg>

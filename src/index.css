@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --color-espresso: #241710;
+  --color-deep-coffee: #35251D;
+  --color-caramel: #A66A3F;
+  --color-caramel-hover: #8E562F;
+  --color-warm-cream: #F5EBDD;
+  --color-cream-light: #FAF5EE;
+  --color-muted-gold: #C5A16B;
+  --color-muted-gold-dark: #A5844E;
+  --color-soft-white: #FFFDF9;
+  --color-text-dim-dark: #D9C3B0;
+  --color-text-dim-light: #6A564A;
+
+  --font-serif: "Playfair Display", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+@layer base {
+  *, ::before, ::after {
+    border-color: rgba(197, 161, 107, 0.15);
+  }
+
+  body {
+    background-color: var(--color-espresso);
+    color: var(--color-soft-white);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-editorial {
+    font-family: var(--font-serif);
+  }
+
+  /* Accessibility Focus Rings */
+  :focus-visible {
+    outline: 2px solid var(--color-muted-gold);
+    outline-offset: 3px;
+  }
+}
+
+/* Custom Utilities for Editorial Aesthetic & Wintech Motion */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFFDF9 0%, #F5EBDD 40%, #C5A16B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Wintech-Inspired Clipping Mask & Curtain Reveal Utilities */
+.img-curtain-reveal {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transition: clip-path 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: clip-path, transform;
+}
+
+/* Editorial line draw animation */
+.line-draw {
+  transform-origin: left;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Refined interactive button effects */
+.btn-magnetic {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease;
+}
+.btn-magnetic:hover {
+  transform: translateY(-2px);
+}
+.btn-magnetic:active {
+  transform: translateY(0);
+}
+
+/* Card hover glow & subtle zoom */
+.card-hover-effect {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.4s ease;
+}
+.card-hover-effect:hover {
+  transform: translateY(-4px);
+  border-color: rgba(197, 161, 107, 0.45);
+  box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(197, 161, 107, 0.2);
+}
+
+/* Image zoom effect inside card */
+.img-zoom-container {
+  overflow: hidden;
+}
+.img-zoom-container img {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.img-zoom-container:hover img {
+  transform: scale(1.06);
+}
+
+/* Staggered Reveal Safe Defaults (Progressive Enhancement: visible by default) */
+.reveal-fade-up {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Subtle micro-animations respecting reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transform: none !important;
+  }
+  .img-curtain-reveal {
+    clip-path: none !important;
+    transition: none !important;
+  }
+}
