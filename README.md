@@ -13,6 +13,15 @@ A production-ready, accessible, and responsive website for **HOC – High on Caf
 
 ---
 
+## 🔗 Live Deployments & Repository Links
+
+- **GitHub Repository (yogini-na):** [https://github.com/yogini-na/hoc-cafe](https://github.com/yogini-na/hoc-cafe)
+- **Collaborator Access (SanchitaSingh14):** [https://github.com/yogini-na/hoc-cafe/invitations](https://github.com/yogini-na/hoc-cafe/invitations)
+- **Live Netlify Deployment:** [http://clever-cajeta-b0acf5.netlify.app](http://clever-cajeta-b0acf5.netlify.app) *(Password: `My-Drop-Site`)*
+- **One-Click Netlify Claim URL:** [Claim on Netlify](https://app.netlify.com/drop/clever-cajeta-b0acf5#drop_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3OTMwOTMzMzYsImV4cCI6MTc5MzA5NjkzNiwiaXNzIjoiTmV0bGlmeSIsInNlc3Npb25faWQiOiI3NTc4N2RiMy03ODRkLTRkMzQtYjNlZS1lNTVhMTk0M2ZjMTcifQ.ar9owSUQZhAZ5Saf34H4sumGFq1vDK4QBnYiaPSVJ0c)
+
+---
+
 ## 🎨 Visual Design System
 
 The website features an editorial coffee-shop aesthetic built with a disciplined palette and typography:
